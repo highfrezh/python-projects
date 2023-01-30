@@ -455,3 +455,29 @@
 #        withdraw(amount)
 # except:
 #    print("Please enter a number")
+
+# --------------Project 019------------
+# You are making a digital menu to order food.
+# The menu is stored as a list of items.
+# Your program needs to take the index of the item as input and output the item name.
+# In case the index is not valid, you should output "Item not found".
+# In case the index is valid and the item name is output successfully, you should output "Thanks for your order".
+#
+# Sample Input
+# 2
+#
+# Sample Output
+# Cheeseburger
+# Thanks for your order
+
+# SOLUTION
+# menu = ['Fries', 'Sandwich', 'Cheeseburger', 'Coffee', 'Soda']
+# #your code goes here
+# index = input()
+# try:
+#     if int(index):
+#         index = int(index)
+#         print(menu[index])
+#         print("Thanks for your order")
+# except:
+#     print("Item not found")
