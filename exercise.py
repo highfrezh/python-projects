@@ -398,3 +398,60 @@
 # h = int(input())
 #
 # print(Shape.area(w, h))
+
+# class Enemy:
+#   name = ""
+#   lives = 0
+#   def __init__(self, name, lives):
+#     self.name = name
+#     self.lives = lives
+#
+#   def hit(self):
+#     self.lives -= 1
+#     if self.lives <= 0:
+#        print(self.name + ' killed')
+#     else:
+#         print(self.name + ' has '+ str(self.lives) + ' lives')
+#
+# class Monster(Enemy):
+#   def __init__(self):
+#     super().__init__('Monster', 3)
+#
+# class Alien(Enemy):
+#   def __init__(self):
+#     super().__init__('Alien', 5)
+#
+#
+# m = Monster()
+# a = Alien()
+#
+# while True:
+#     x = input()
+#     if x == 'laser':
+#         Enemy.hit(a)
+#     if x == 'gun':
+#         Enemy.hit(m)
+#
+#     if x == 'exit':
+#         break
+
+# ----------Project 018-------------
+# Exception Handling
+#
+# An ATM machine takes the amount to be withdrawn as input and calls the corresponding withdrawal method.
+# In case the input is not a number, the machine should output "Please enter a number".
+# Use exception handling to take a number as input, call the withdraw() method with the input as its argument, and output "Please enter a number", in case the input is not a number.
+
+# SOLUTION
+
+# def withdraw(amount):
+#    print(str(amount) + " withdrawn!")
+#
+# #your code goes here
+# amount = input()
+# try:
+#     if int(amount):
+#        amount = int(amount)
+#        withdraw(amount)
+# except:
+#    print("Please enter a number")
